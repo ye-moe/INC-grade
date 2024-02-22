@@ -37,22 +37,22 @@ p{
     margin-top: 170px;
     margin-right: 240px;
     border-radius: 20px;
-    box-shadow:5px 5px 5px #999;
+    box-shadow:5px 5px 5px #B2B4B2;
 }
 
-a{
+.class-list a{
     outline: none;
     text-decoration: none;
 }
 
-a:focus, a:visited, a:active{
+.class-list a:focus, a:visited, a:active{
     text-decoration: none;
     color: #FFFFFF;
 }
 
-a:hover{
+.class-list a:hover{
     text-decoration: none;
-    color: #FFFFFF;
+    color: #FF6600;
 }
 
 ul{
@@ -93,7 +93,7 @@ ul li{
     width: 100%;
     height: 60px;
     background-color: #0058A4;
-    color: #87CEFA;
+    color: #FFFFFF;
 }
 
 #navbar img {
@@ -108,12 +108,14 @@ ul li{
     display: flex;
     margin-right: 1rem;
     text-decoration: none;
+    color: #FFFFFF;
 }
 
 .class-list a{
     display: block;
     font-size: 1rem;
     padding: 1rem;
+    color: #FFFFFF;
 }
 
 .title-card{
@@ -125,7 +127,7 @@ ul li{
 h1{
     font: normal 179% 'century gothic', arial, sans-serif, 6em;
     font-size: 3.1em;
-    color: #FF4500;
+    color: #FF6600;
     margin: 0 0 15px 0;
     padding: 15px 0 5px 0;
 }
@@ -147,14 +149,14 @@ h2{
     margin-top: 130px;
     margin-left: 220px;
     font-size: 2.5em;
-    color: #FF4500;
+    color: #FF6600;
 }
 
 .body-thing h3{
     margin-top: 50px;
     margin-left: 220px;
     font-size: 2.5em;
-    color: #FF4500;
+    color: #FF6600;
 }
 
 .body-thing p{
@@ -211,7 +213,7 @@ ol{
     color: #000000;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    background: #999;
+    background: #B2B4B2;
     margin-top: 300px;
 }
 
