@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>BMCC Incomplete Grades</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+  <script src="js/cookiemanager.js"></script>
+  <script src="js/Login.js"></script>
+
+  <script>
+    function register()
+    {
+        let x=new Login();
+        if(x.register(userid.value,password.value)) location.href="login.html";//REDIRECT TO LOGIN.HTML
+        else message.innerHTML="ERROR: User already exists";
+    }
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="register.html">BMCC <span class="logo_colour">Incomplete (INC) Grades</span></a></h1>
+          <h2>Learn about Incomplete Grades and how to resolve them</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="register.html">Register</a></li>
+        </ul>
+      </div>
+    </div>
+    <p style="padding:5.5px"></p><p></p>
+    <div id="site_content">
+      <div id="content" style="width:67em;">
+        <h1 style="text-align:center;">Registration</h1>
+        <p style="text-align:center;"><strong>Sign up using your BMCC student email.</strong></p>
+        <form action="#" method="post">
+          <div class="form_settings">
+            <p><span style="padding:4px;text-align:center;margin-left:153px;margin-right:-10em;">User ID:</span><input class="contact" type="text" id="userid" style="margin-left: 100px;"/></p>
+            <p><span style="padding:4px;text-align:center;margin-left:153px;margin-right:-10em;">Password:</span><input class="contact" type="text" id="password" style="margin-left: 100px;"/></p>
+            <p style="padding-top: 15px;margin-left:-30px;"><span>&nbsp;</span><input class="submit" type="button" name="contact_submitted" value="Submit" onclick="register();"/></p>
+          </div>
+        </form>
+        <span style="float:left;text-align:left;padding:.5em;">
+          <a href="login.html">Click here to login</a>
+        </span>
+        <p><br/><div id="message" style="padding:4px;"></div></p>
+      </div>
+    </div><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+    <div id="footer">
+      <div class="space"></div>
+      <p><a href="register.html">Registration</a> | 
+        <a target="_blank" href="https://www.bmcc.cuny.edu/academics/academic-calendar/spring-regular-2024/">Calendar</a> | 
+        <a target="_blank" href="https://www.bmcc.cuny.edu/about-bmcc/public-affairs/social-media-directory/">Contact Us</a> | 
+        <a target="_blank" href="https://www.bmcc.cuny.edu/admissions/bmcc-and-beyond/">BMCC & Beyond</a></p>
+    </div>
+  </div>
+  <div style="text-align: center; font-size: 0.75em;">Copyright &copy; 
+    Ye Moe - BMCC Tech Innovation HUB Internship @ BMCC TECH LEARNING COMMUNITY</div>
+</body>
+</html>
