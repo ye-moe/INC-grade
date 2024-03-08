@@ -198,6 +198,21 @@
           you may choose to contact your advisor.</h5>
       </div>
     </div>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "1fc846c3-376c-445e-be09-e96653810d72", // The ID of this integration.
+          region: "us-east", // The region your integration is hosted in.
+          serviceInstanceID: "e5751802-8b86-41ae-b412-2164c99efe5e", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+    
     <div id="footer">
       <p><a href="index.html">Home</a> | <a href="login.html">Login</a> | <a href="classes.html">Classes</a> | <a href="assignments.html">Assignments</a> | <a target="_blank" href="https://www.bmcc.cuny.edu/about-bmcc/public-affairs/social-media-directory/">Contact Us</a></p>
       <p><a target="_blank" href="https://www.bmcc.cuny.edu/academics/academic-calendar/spring-regular-2024/">Calendar</a> | 
